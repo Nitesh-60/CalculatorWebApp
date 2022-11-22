@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+p{
+    margin: 0;
+    float: right;
+    padding: 1rem;
+
+}
+h1{
+    font-size: xx-large;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    text-shadow: 2px 8px yellow;
+}
+.container{
+    margin: auto;
+    margin-top: 6rem;
+    padding: 1rem;
+    border: 1px solid;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 12px;
+    background-color: rgb(241, 229, 61);
+
+}
+.screen{
+    border: 1px solid;
+    width: 37.7rem;
+    height: 4.5rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(210, 201, 201);
+    color: rgb(16, 15, 15);
+    font-size: xx-large;
+    font-weight: 700;
+    border-radius: 12px;
+
+}
+.number-pad{
+    /* border: 1px solid; */
+    height: 22rem;
+    width: 37.7rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "clear clear delete delete"
+    "zero one two addition"
+    "three four five subtraction"
+    "six seven eight multiplication"
+    "nine zer0-zero zero-zero-zero division"
+    "equals equals equals equals";
+    gap: 0.5rem;
+}
+#clear{
+    grid-area: clear;
+}
+#delete{
+    grid-area: delete;
+}
+#equals{
+    grid-area: equals;
+}
+button{
+    font-size: x-large;
+    font-weight: 700;
+    background-color: rgb(226, 226, 237);
+    border-radius: 16px;
+}
+button:hover{
+    background-color: blue;
+}
